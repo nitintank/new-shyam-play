@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<!-- Coding by CodingNepal || www.codingnepalweb.com -->
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Boxicons CSS -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <title>Shyam Play</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar">
+        <div class="logo_item">
+            <i class="bx bx-menu" id="sidebarOpen"></i>
+            <img src="images/logo.png" alt="">
+        </div>
+        <div class="search_bar">
+            <input type="text" placeholder="Search" />
+        </div>
+
+        <div class="navbar_content">
+            <div style="display: flex; align-items: center; justify-content: center; gap: 10px;">
+                <img src="/images/fox.png" alt="">
+                <button>LOGIN</button>
+            </div>
+            <button class="mob" style="background-color: #b5b326;">REGISTER</button>
+            <i class="bi bi-grid mob"></i>
+            <i class='bx bx-moon mob' id="darkLight"></i>
+        </div>
+    </nav>
+
+    <!-- sidebar -->
+    <nav class="sidebar">
+        <div class="menu_content">
+            <ul class="menu_items">
+                <!-- duplicate these li tag if you want to add or remove navlink only -->
+                <!-- Start -->
+                <li class="item">
+                    <a href="#" class="nav_link">
+                        <span class="navlink_icon">
+                            <i class="bx bxs-magic-wand"></i>
+                        </span>
+                        <span class="navlink">In-Play</span>
+                    </a>
+                </li>
+                <!-- End -->
+
+                <li class="item">
+                    <a href="#" class="nav_link">
+                        <span class="navlink_icon">
+                            <i class="bx bx-loader-circle"></i>
+                        </span>
+                        <span class="navlink">Favorites</span>
+                    </a>
+                </li>
+            </ul>
+            <ul class="menu_items">
+                <div class="menu_title menu_dahsboard"></div>
+                <!-- duplicate or remove this li tag if you want to add or remove navlink with submenu -->
+                <!-- start -->
+                <li class="item">
+                    <div href="#" class="nav_link submenu_item">
+                        <span class="navlink_icon">
+                            <i class="bx bx-home-alt"></i>
+                        </span>
+                        <span class="navlink">Cricket</span>
+                        <i class="bx bx-chevron-right arrow-left"></i>
+                    </div>
+
+                    <ul class="menu_items submenu">
+                        <a href="#" class="nav_link sublink">Nav Sub Link</a>
+                        <a href="#" class="nav_link sublink">Nav Sub Link</a>
+                        <a href="#" class="nav_link sublink">Nav Sub Link</a>
+                        <a href="#" class="nav_link sublink">Nav Sub Link</a>
+                    </ul>
+                </li>
+                <!-- end -->
+
+                <!-- duplicate this li tag if you want to add or remove  navlink with submenu -->
+                <!-- start -->
+                <li class="item">
+                    <div href="#" class="nav_link submenu_item">
+                        <span class="navlink_icon">
+                            <i class="bx bx-grid-alt"></i>
+                        </span>
+                        <span class="navlink">Soccer</span>
+                        <i class="bx bx-chevron-right arrow-left"></i>
+                    </div>
+
+                    <ul class="menu_items submenu">
+                        <a href="#" class="nav_link sublink">Nav Sub Link</a>
+                        <a href="#" class="nav_link sublink">Nav Sub Link</a>
+                        <a href="#" class="nav_link sublink">Nav Sub Link</a>
+                        <a href="#" class="nav_link sublink">Nav Sub Link</a>
+                    </ul>
+                </li>
+                <!-- end -->
+
+                <!-- duplicate this li tag if you want to add or remove  navlink with submenu -->
+                <!-- start -->
+                <li class="item">
+                    <div href="#" class="nav_link submenu_item">
+                        <span class="navlink_icon">
+                            <i class="bx bx-filter"></i>
+                        </span>
+                        <span class="navlink">Tennis</span>
+                        <i class="bx bx-chevron-right arrow-left"></i>
+                    </div>
+
+                    <ul class="menu_items submenu">
+                        <a href="#" class="nav_link sublink">Nav Sub Link</a>
+                        <a href="#" class="nav_link sublink">Nav Sub Link</a>
+                        <a href="#" class="nav_link sublink">Nav Sub Link</a>
+                        <a href="#" class="nav_link sublink">Nav Sub Link</a>
+                    </ul>
+                </li>
+                <!-- end -->
+
+                <!-- duplicate this li tag if you want to add or remove  navlink with submenu -->
+                <!-- start -->
+                <li class="item">
+                    <div href="#" class="nav_link submenu_item">
+                        <span class="navlink_icon">
+                            <i class="bx bx-cloud-upload"></i>
+                        </span>
+                        <span class="navlink">Horse Racing</span>
+                        <i class="bx bx-chevron-right arrow-left"></i>
+                    </div>
+
+                    <ul class="menu_items submenu">
+                        <a href="#" class="nav_link sublink">Nav Sub Link</a>
+                        <a href="#" class="nav_link sublink">Nav Sub Link</a>
+                        <a href="#" class="nav_link sublink">Nav Sub Link</a>
+                        <a href="#" class="nav_link sublink">Nav Sub Link</a>
+                    </ul>
+                </li>
+                <!-- end -->
+
+                <!-- duplicate this li tag if you want to add or remove  navlink with submenu -->
+                <!-- start -->
+                <li class="item">
+                    <div href="#" class="nav_link submenu_item">
+                        <span class="navlink_icon">
+                            <i class="bx bx-grid-alt"></i>
+                        </span>
+                        <span class="navlink">Greyhound Racing</span>
+                        <i class="bx bx-chevron-right arrow-left"></i>
+                    </div>
+
+                    <ul class="menu_items submenu">
+                        <a href="#" class="nav_link sublink">Nav Sub Link</a>
+                        <a href="#" class="nav_link sublink">Nav Sub Link</a>
+                        <a href="#" class="nav_link sublink">Nav Sub Link</a>
+                        <a href="#" class="nav_link sublink">Nav Sub Link</a>
+                    </ul>
+                </li>
+                <!-- end -->
+            </ul>
+            <ul class="menu_items">
+                <div class="menu_title menu_setting"></div>
+                <li class="item">
+                    <a href="#" class="nav_link">
+                        <span class="navlink_icon">
+                            <i class="bx bx-flag"></i>
+                        </span>
+                        <span class="navlink">Live Casino</span>
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="#" class="nav_link">
+                        <span class="navlink_icon">
+                            <i class="bx bx-medal"></i>
+                        </span>
+                        <span class="navlink">Slot Game</span>
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="#" class="nav_link">
+                        <span class="navlink_icon">
+                            <i class="bx bx-cog"></i>
+                        </span>
+                        <span class="navlink">Crash Game</span>
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="#" class="nav_link">
+                        <span class="navlink_icon">
+                            <i class="bx bx-layer"></i>
+                        </span>
+                        <span class="navlink">Table Game</span>
+                    </a>
+                </li>
+            </ul>
+
+            <!-- Sidebar Open / Close -->
+            <div class="bottom_content">
+                <div class="bottom expand_sidebar">
+                    <span> Expand</span>
+                    <i class='bx bx-log-in'></i>
+                </div>
+                <div class="bottom collapse_sidebar">
+                    <span> Collapse</span>
+                    <i class='bx bx-log-out'></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Content Box -->
+
+    <section class="content">
+        
+        <div class='slider'>
+            <div class='slide1'></div>
+            <div class='slide2'></div>
+            <div class='slide3'></div>
+        </div>
+
+        <div class="games">
+            <div class="game">
+                <img src="/images/sports.png" alt="">
+                <p>SPORTS</p>
+            </div>
+            <div class="game">
+                <img src="/images/casino1.png" alt="">
+                <p>LIVE CASINO</p>
+            </div>
+            <div class="game">
+                <img src="/images/slot-machine.png" alt="">
+                <p>SLOT GAMES</p>
+            </div>
+            <div class="game">
+                <img src="/images/game-controller.png" alt="">
+                <p>CRASH GAMES</p>
+            </div>
+            <div class="game">
+                <img src="/images/pool.png" alt="">
+                <p>TABLE GAMES</p>
+            </div>
+            <div class="game">
+                <img src="/images/virtual-tour.png" alt="">
+                <p>VIRTUAL SPORTS</p>
+            </div>
+            <div class="game">
+                <img src="/images/ludo.png" alt="">
+                <p>OUR GAME</p>
+            </div>
+        </div>
+
+ <!-- Games Box -->
+ <div class="boxesz">
+    <div class="boxz boxz3">
+        <img src="/images/cricket.webp" alt="">
+        <h2>CRICKET</h2>
+    </div>
+    <div class="boxz boxz2">
+        <img src="/images/footballz.webp" alt="">
+        <h2>FOOTBALL</h2>
+    </div>
+    <div class="boxz boxz1">
+        <img src="/images/tennisz.png" alt="">
+        <h2>TENNIS</h2>
+    </div>
+    <div class="boxz boxz4">
+        <img src="/images/sports.webp" alt="">
+        <h2>VIRTUAL SPORTS</h2>
+    </div>
+    <div class="boxz boxz5">
+        <img src="/images/horse-race.png" alt="">
+        <h2>HORSE RACING</h2>
+    </div>
+    <div class="boxz boxz6">
+        <img src="/images/greyhound.png" alt="">
+        <h2>GREYHOUND RACING</h2>
+    </div>
+</div>
+
+<!-- TABLE -->
+<div class="table">
+    <h2 style="width: 170px;"><img src="/images/play.png" alt="">INPLAY</h2>
+    <div class="table-content">
+        <div class="tab-cont-1">
+            <div class="t-con-1">
+                <p style="display: flex; align-items: center; gap: 5px;"><img src="/images/play.png" alt="">INPLAY</p>
+            </div>
+            <div class="t-con-2">
+                <img src="/images/cricket.png" alt="">
+                <img src="/images/star2.png" alt="">
+            </div>
+            <div class="t-con-3">
+                <p>Dambulla Aura v Jaffna Kings</p>
+                <p>(Lanka Premier League)</p>
+            </div>
+            <div class="t-con-4">
+                <p>F1 F</p>
+            </div>
+        </div>
+        <div class="tab-cont-2">
+            <div class="t-btn">
+                <p class="blue">2.16</p>
+                <p class="pink">2.21</p>
+            </div>
+            <div class="t-btn">
+                <p class="blank">__</p>
+                <p class="blank">__</p>
+            </div>
+            <div class="t-btn">
+                <p class="blue">2.16</p>
+                <p class="pink">2.21</p>
+            </div>
+        </div>
+    </div>
+    <div class="table-content">
+        <div class="tab-cont-1">
+            <div class="t-con-1">
+                <p style="display: flex; align-items: center; gap: 5px;"><img src="/images/play.png" alt="">INPLAY</p>
+            </div>
+            <div class="t-con-2">
+                <img src="/images/football.png" alt="">
+                <img src="/images/star2.png" alt="">
+            </div>
+            <div class="t-con-3">
+                <p>Portugal (W) v USA (W)</p>
+                <p>(FIFA Womens World Cup)</p>
+            </div>
+            <div class="t-con-4">
+                <p>F1 BM</p>
+            </div>
+        </div>
+        <div class="tab-cont-2">
+            <div class="t-btn">
+                <p class="blue">1.26</p>
+                <p class="pink">2.15</p>
+            </div>
+            <div class="t-btn">
+                <p class="blank">__</p>
+                <p class="blank">__</p>
+            </div>
+            <div class="t-btn">
+                <p class="blue">2.12</p>
+                <p class="pink">1.14</p>
+            </div>
+        </div>
+    </div>
+    <div class="table-content">
+        <div class="tab-cont-1">
+            <div class="t-con-1">
+                <p style="display: flex; align-items: center; gap: 5px;"><img src="/images/play.png" alt="">INPLAY</p>
+            </div>
+            <div class="t-con-2">
+                <img src="/images/tennis.png" alt="">
+                <img src="/images/star2.png" alt="">
+            </div>
+            <div class="t-con-3">
+                <p>Huesler v Altmaier</p>
+                <p>(ATP - SINGLES KITZBUHEL)</p>
+            </div>
+            <div class="t-con-4">
+                <p>BM</p>
+            </div>
+        </div>
+        <div class="tab-cont-2">
+            <div class="t-btn">
+                <p class="blue">2.16</p>
+                <p class="pink">2.21</p>
+            </div>
+            <div class="t-btn">
+                <p class="blank">__</p>
+                <p class="blank">__</p>
+            </div>
+            <div class="t-btn">
+                <p class="blue">2.16</p>
+                <p class="pink">2.21</p>
+            </div>
+        </div>
+    </div>
+    <div class="table-content">
+        <div class="tab-cont-1">
+            <div class="t-con-1">
+                <p style="display: flex; align-items: center; gap: 5px;"><img src="/images/play.png" alt="">INPLAY</p>
+            </div>
+            <div class="t-con-2">
+                <img src="/images/horse.png" alt="">
+                <img src="/images/star2.png" alt="">
+            </div>
+            <div class="t-con-3">
+                <p>Artur Grela - Petr David</p>
+                <p>(TT Elite Series)</p>
+            </div>
+            <div class="t-con-4">
+                <p>F1</p>
+            </div>
+        </div>
+        <div class="tab-cont-2">
+            <div class="t-btn">
+                <p class="blue">2.16</p>
+                <p class="pink">2.21</p>
+            </div>
+            <div class="t-btn">
+                <p class="blank">__</p>
+                <p class="blank">__</p>
+            </div>
+            <div class="t-btn">
+                <p class="blue">2.16</p>
+                <p class="pink">2.21</p>
+            </div>
+        </div>
+    </div>
+    <div class="table-content">
+        <div class="tab-cont-1">
+            <div class="t-con-1">
+                <p style="display: flex; align-items: center; gap: 5px;"><img src="/images/play.png" alt="">INPLAY</p>
+            </div>
+            <div class="t-con-2">
+                <img src="/images/cricket.png" alt="">
+                <img src="/images/star2.png" alt="">
+            </div>
+            <div class="t-con-3">
+                <p>Dambulla Aura v Jaffna Kings</p>
+                <p>(Lanka Premier League)</p>
+            </div>
+            <div class="t-con-4">
+                <p>F1 F</p>
+            </div>
+        </div>
+        <div class="tab-cont-2">
+            <div class="t-btn">
+                <p class="blue">2.16</p>
+                <p class="pink">2.21</p>
+            </div>
+            <div class="t-btn">
+                <p class="blank">__</p>
+                <p class="blank">__</p>
+            </div>
+            <div class="t-btn">
+                <p class="blue">2.16</p>
+                <p class="pink">2.21</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Trending Game Box -->
+        <div class="boxes">
+            <div class="box box1">
+                <h1>NEW GAME</h1>
+                <img src="/images/treasure.png" alt="">
+            </div>
+            <div class="box box2">
+                <h1>NEW GAME</h1>
+                <img src="/images/casino.png" alt="">
+            </div>
+            <div class="box box3">
+                <h1>NEW GAME</h1>
+                <img src="/images/wheel.png" alt="">
+            </div>
+        </div>
+
+<!-- TABLE -->
+<div class="table">
+    <h2><img src="/images/upcoming.png" alt="">UPCOMING MATCHES</h2>
+    <div class="table-content">
+        <div class="tab-cont-1">
+            <div class="t-con-1">
+                <p style="display: flex; align-items: center; gap: 5px; text-align: center;">TODAY <br> 15:00</p>
+            </div>
+            <div class="t-con-2">
+                <img src="/images/cricket.png" alt="">
+                <img src="/images/star2.png" alt="">
+            </div>
+            <div class="t-con-3">
+                <p>Dambulla Aura v Jaffna Kings</p>
+                <p>(Lanka Premier League)</p>
+            </div>
+            <div class="t-con-4">
+                <p>F1 F</p>
+            </div>
+        </div>
+        <div class="tab-cont-2">
+            <div class="t-btn">
+                <p class="blue">2.16</p>
+                <p class="pink">2.21</p>
+            </div>
+            <div class="t-btn">
+                <p class="blank">__</p>
+                <p class="blank">__</p>
+            </div>
+            <div class="t-btn">
+                <p class="blue">2.16</p>
+                <p class="pink">2.21</p>
+            </div>
+        </div>
+    </div>
+    <div class="table-content">
+        <div class="tab-cont-1">
+            <div class="t-con-1">
+                <p style="display: flex; align-items: center; gap: 5px; text-align: center;">TODAY <br> 17:30</p>
+            </div>
+            <div class="t-con-2">
+                <img src="/images/football.png" alt="">
+                <img src="/images/star2.png" alt="">
+            </div>
+            <div class="t-con-3">
+                <p>Portugal (W) v USA (W)</p>
+                <p>(FIFA Womens World Cup)</p>
+            </div>
+            <div class="t-con-4">
+                <p>F1 BM</p>
+            </div>
+        </div>
+        <div class="tab-cont-2">
+            <div class="t-btn">
+                <p class="blue">1.26</p>
+                <p class="pink">2.15</p>
+            </div>
+            <div class="t-btn">
+                <p class="blank">__</p>
+                <p class="blank">__</p>
+            </div>
+            <div class="t-btn">
+                <p class="blue">2.12</p>
+                <p class="pink">1.14</p>
+            </div>
+        </div>
+    </div>
+    <div class="table-content">
+        <div class="tab-cont-1">
+            <div class="t-con-1">
+                <p style="display: flex; align-items: center; gap: 5px; text-align: center;">TODAY <br> 16:10</p>
+            </div>
+            <div class="t-con-2">
+                <img src="/images/tennis.png" alt="">
+                <img src="/images/star2.png" alt="">
+            </div>
+            <div class="t-con-3">
+                <p>Huesler v Altmaier</p>
+                <p>(ATP - SINGLES KITZBUHEL)</p>
+            </div>
+            <div class="t-con-4">
+                <p>BM</p>
+            </div>
+        </div>
+        <div class="tab-cont-2">
+            <div class="t-btn">
+                <p class="blue">2.16</p>
+                <p class="pink">2.21</p>
+            </div>
+            <div class="t-btn">
+                <p class="blank">__</p>
+                <p class="blank">__</p>
+            </div>
+            <div class="t-btn">
+                <p class="blue">2.16</p>
+                <p class="pink">2.21</p>
+            </div>
+        </div>
+    </div>
+    <div class="table-content">
+        <div class="tab-cont-1">
+            <div class="t-con-1">
+                <p style="display: flex; align-items: center; gap: 5px; text-align: center;">TODAY <br> 14:00</p>
+            </div>
+            <div class="t-con-2">
+                <img src="/images/horse.png" alt="">
+                <img src="/images/star2.png" alt="">
+            </div>
+            <div class="t-con-3">
+                <p>Artur Grela - Petr David</p>
+                <p>(TT Elite Series)</p>
+            </div>
+            <div class="t-con-4">
+                <p>F1</p>
+            </div>
+        </div>
+        <div class="tab-cont-2">
+            <div class="t-btn">
+                <p class="blue">2.16</p>
+                <p class="pink">2.21</p>
+            </div>
+            <div class="t-btn">
+                <p class="blank">__</p>
+                <p class="blank">__</p>
+            </div>
+            <div class="t-btn">
+                <p class="blue">2.16</p>
+                <p class="pink">2.21</p>
+            </div>
+        </div>
+    </div>
+    <div class="table-content">
+        <div class="tab-cont-1">
+            <div class="t-con-1">
+                <p style="display: flex; align-items: center; gap: 5px; text-align: center;">TODAY <br> 12:30</p>
+            </div>
+            <div class="t-con-2">
+                <img src="/images/cricket.png" alt="">
+                <img src="/images/star2.png" alt="">
+            </div>
+            <div class="t-con-3">
+                <p>Dambulla Aura v Jaffna Kings</p>
+                <p>(Lanka Premier League)</p>
+            </div>
+            <div class="t-con-4">
+                <p>F1 F</p>
+            </div>
+        </div>
+        <div class="tab-cont-2">
+            <div class="t-btn">
+                <p class="blue">2.16</p>
+                <p class="pink">2.21</p>
+            </div>
+            <div class="t-btn">
+                <p class="blank">__</p>
+                <p class="blank">__</p>
+            </div>
+            <div class="t-btn">
+                <p class="blue">2.16</p>
+                <p class="pink">2.21</p>
+            </div>
+        </div>
+    </div>
+    <div class="table-content">
+        <div class="tab-cont-1">
+            <div class="t-con-1">
+                <p style="display: flex; align-items: center; gap: 5px; text-align: center;">TODAY <br> 15:00</p>
+            </div>
+            <div class="t-con-2">
+                <img src="/images/cricket.png" alt="">
+                <img src="/images/star2.png" alt="">
+            </div>
+            <div class="t-con-3">
+                <p>Dambulla Aura v Jaffna Kings</p>
+                <p>(Lanka Premier League)</p>
+            </div>
+            <div class="t-con-4">
+                <p>F1 F</p>
+            </div>
+        </div>
+        <div class="tab-cont-2">
+            <div class="t-btn">
+                <p class="blue">2.16</p>
+                <p class="pink">2.21</p>
+            </div>
+            <div class="t-btn">
+                <p class="blank">__</p>
+                <p class="blank">__</p>
+            </div>
+            <div class="t-btn">
+                <p class="blue">2.16</p>
+                <p class="pink">2.21</p>
+            </div>
+        </div>
+    </div>
+    <div class="table-content">
+        <div class="tab-cont-1">
+            <div class="t-con-1">
+                <p style="display: flex; align-items: center; gap: 5px; text-align: center;">TODAY <br> 17:30</p>
+            </div>
+            <div class="t-con-2">
+                <img src="/images/football.png" alt="">
+                <img src="/images/star2.png" alt="">
+            </div>
+            <div class="t-con-3">
+                <p>Portugal (W) v USA (W)</p>
+                <p>(FIFA Womens World Cup)</p>
+            </div>
+            <div class="t-con-4">
+                <p>F1 BM</p>
+            </div>
+        </div>
+        <div class="tab-cont-2">
+            <div class="t-btn">
+                <p class="blue">1.26</p>
+                <p class="pink">2.15</p>
+            </div>
+            <div class="t-btn">
+                <p class="blank">__</p>
+                <p class="blank">__</p>
+            </div>
+            <div class="t-btn">
+                <p class="blue">2.12</p>
+                <p class="pink">1.14</p>
+            </div>
+        </div>
+    </div>
+    <div class="table-content">
+        <div class="tab-cont-1">
+            <div class="t-con-1">
+                <p style="display: flex; align-items: center; gap: 5px; text-align: center;">TODAY <br> 16:10</p>
+            </div>
+            <div class="t-con-2">
+                <img src="/images/tennis.png" alt="">
+                <img src="/images/star2.png" alt="">
+            </div>
+            <div class="t-con-3">
+                <p>Huesler v Altmaier</p>
+                <p>(ATP - SINGLES KITZBUHEL)</p>
+            </div>
+            <div class="t-con-4">
+                <p>BM</p>
+            </div>
+        </div>
+        <div class="tab-cont-2">
+            <div class="t-btn">
+                <p class="blue">2.16</p>
+                <p class="pink">2.21</p>
+            </div>
+            <div class="t-btn">
+                <p class="blank">__</p>
+                <p class="blank">__</p>
+            </div>
+            <div class="t-btn">
+                <p class="blue">2.16</p>
+                <p class="pink">2.21</p>
+            </div>
+        </div>
+    </div>
+    <div class="table-content">
+        <div class="tab-cont-1">
+            <div class="t-con-1">
+                <p style="display: flex; align-items: center; gap: 5px; text-align: center;">TODAY <br> 14:00</p>
+            </div>
+            <div class="t-con-2">
+                <img src="/images/horse.png" alt="">
+                <img src="/images/star2.png" alt="">
+            </div>
+            <div class="t-con-3">
+                <p>Artur Grela - Petr David</p>
+                <p>(TT Elite Series)</p>
+            </div>
+            <div class="t-con-4">
+                <p>F1</p>
+            </div>
+        </div>
+        <div class="tab-cont-2">
+            <div class="t-btn">
+                <p class="blue">2.16</p>
+                <p class="pink">2.21</p>
+            </div>
+            <div class="t-btn">
+                <p class="blank">__</p>
+                <p class="blank">__</p>
+            </div>
+            <div class="t-btn">
+                <p class="blue">2.16</p>
+                <p class="pink">2.21</p>
+            </div>
+        </div>
+    </div>
+    <div class="table-content">
+        <div class="tab-cont-1">
+            <div class="t-con-1">
+                <p style="display: flex; align-items: center; gap: 5px; text-align: center;">TODAY <br> 12:30</p>
+            </div>
+            <div class="t-con-2">
+                <img src="/images/cricket.png" alt="">
+                <img src="/images/star2.png" alt="">
+            </div>
+            <div class="t-con-3">
+                <p>Dambulla Aura v Jaffna Kings</p>
+                <p>(Lanka Premier League)</p>
+            </div>
+            <div class="t-con-4">
+                <p>F1 F</p>
+            </div>
+        </div>
+        <div class="tab-cont-2">
+            <div class="t-btn">
+                <p class="blue">2.16</p>
+                <p class="pink">2.21</p>
+            </div>
+            <div class="t-btn">
+                <p class="blank">__</p>
+                <p class="blank">__</p>
+            </div>
+            <div class="t-btn">
+                <p class="blue">2.16</p>
+                <p class="pink">2.21</p>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- Footer -->
+
+        <div class="foot">
+            <img src="/images/Gaming-Curacao-Logo.webp" alt="">
+            <div class="social">
+                <img src="/images/whatsapp.png" alt="">
+                <img src="/images/telegram.png" alt="">
+                <img src="/images/facebook.png" alt="">
+                <img src="/images/instagram.png" alt="">
+            </div>
+        </div>
+
+        <div class="partners">
+            <h2>GAMING PARTNERS</h2>
+            <div class="partner-img">
+                <img src="https://opt-v3-files.raksahb.com/static/media/ezugiLogoNew.png" alt="">
+                <img src="https://opt-v3-files.raksahb.com/static/media/aGLogoNew.png" alt="">
+                <img src="https://opt-v3-files.raksahb.com/static/media/betGamesLogoNew.png" alt="">
+                <img src="https://opt-v3-files.raksahb.com/static/media/evolutionGamesNew.png" alt="">
+                <img src="https://opt-v3-files.raksahb.com/static/media/netentLogoNew.png" alt="">
+                <img src="https://opt-v3-files.raksahb.com/static/media/tvbetLogoNew.png" alt="">
+                <img src="https://opt-v3-files.raksahb.com/static/media/superSpadeLogoNew.png" alt="">
+                <img src="https://opt-v3-files.raksahb.com/static/media/supernowaLogoNew.png" alt="">
+                <img src="https://opt-v3-files.raksahb.com/static/media/BTILogoNew.png" alt="">
+            </div>
+        </div>
+
+        <div class="payments">
+            <h2>PAYMENT METHODS</h2>
+            <div class="payment-img">
+                <img src="https://opt-v3-files.raksahb.com/static/media/internetBanking.png" alt="">
+                <img src="https://opt-v3-files.raksahb.com/static/media/upiLogoNew.png" alt="">
+                <img src="https://opt-v3-files.raksahb.com/static/media/gpayLogoNew.png" alt="">
+                <img src="https://opt-v3-files.raksahb.com/static/media/paytmLogoNew.png" alt="">
+                <img src="https://opt-v3-files.raksahb.com/static/media/astropayLogoNew.png" alt="">
+            </div>
+        </div>
+
+        <div class="copyright">
+            <div class="copyright-img">
+                <img src="https://opt-v3-files.raksahb.com/static/media/gamestopLogo.png" alt="">
+                <img src="https://opt-v3-files.raksahb.com/static/media/beAwareLogo.png" alt="">
+                <img src="https://opt-v3-files.raksahb.com/static/media/gamcareLogo.png" alt="">
+                <img src="https://opt-v3-files.raksahb.com/static/media/18PlusLogo.png" alt="" style="width: 40px;">
+            </div>
+            <p>Copyright 2021-2023. All Rights Reserved</p>
+        </div>
+
+        <p class="law">This website is proudly operated by Shyamplay.com, a legally registered company under the laws of CURACAO.</p>
+    </section>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>
