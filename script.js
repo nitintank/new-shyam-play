@@ -5,6 +5,8 @@ const submenuItems = document.querySelectorAll(".submenu_item");
 const sidebarOpen = document.querySelector("#sidebarOpen");
 const sidebarClose = document.querySelector(".collapse_sidebar");
 const sidebarExpand = document.querySelector(".expand_sidebar");
+const cont = document.getElementById('cont');
+
 sidebarOpen.addEventListener("click", () => sidebar.classList.toggle("close"));
 
 sidebarClose.addEventListener("click", () => {
@@ -49,6 +51,15 @@ submenuItems.forEach((item, index) => {
 
 if (window.innerWidth < 768) {
   sidebar.classList.add("close");
+
+  cont.addEventListener("click", () => {
+    if (sidebar.classList.contains("close")) {
+      console.log("hello")
+    }
+    else{
+      sidebar.classList.add("close")
+    }
+  });
 } else {
   sidebar.classList.remove("close");
 }
